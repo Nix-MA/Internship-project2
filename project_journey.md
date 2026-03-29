@@ -39,7 +39,7 @@ To combat these architectural restrictions, I created heavily isolated component
 - **Improvement:** This directly led to the `chunking` architecture where files are explicitly ripped into 1500-token arrays, forcing distributed polling across the whole layout sequentially.
 
 ### Iteration 2: Uniform AI Grading Logic (Failed)
-- **Attempt:** To simplify the grading engine, I originally routed all user answers—from simple binary (True/False) to complex Paragraphs—directly into the LLM for evaluation against a static rubric block.
+- **Attempt:** To simplify the grading engine, I originally routed all user answers-from simple binary (True/False) to complex Paragraphs-directly into the LLM for evaluation against a static rubric block.
 - **Result:** Terrible latency and inconsistent objective grading. Simple 'Match the Following' questions took up to 60 seconds to evaluate, and the LLM occasionally failed a student who correctly answered 'True' just because it hallucinated a contextual edge-case. 
 - **Improvement:** Built the Polymorphic Evaluation Pipeline. Objective questions skip the LLM entirely, routing to C-extension `rapidfuzz` heuristics (0.001ms latency), reserving AI compute *only* for subjective Long Answer responses.
 
