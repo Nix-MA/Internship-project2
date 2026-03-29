@@ -1,0 +1,18 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Local environments
+.env
+
+# SQLite Databases
+*.db
+
+# Logs
+logs/
+
+# Optional Outputs
+*.pdf
+*.docx

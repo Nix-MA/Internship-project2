@@ -1,0 +1,17 @@
+# Lumina Assessment - Default Configuration
+# DO NOT ADD SECRETS HERE. USE .env FOR SENSITIVE OVERRIDES.
+
+llm:
+  model_name: "llama3.2"
+  base_url: "http://localhost:11434"
+  timeout_seconds: 120
+
+processing:
+  chunk_size: 700
+  chunk_overlap: 100
+  max_chunks: 8
+  max_file_size_mb: 200
+
+logging:
+  level: "INFO"
+  log_dir: "logs"
