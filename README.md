@@ -24,7 +24,7 @@ The system is built sequentially to prevent cascading failures. Modules operate 
 ## 4. Tech Stack
 - **Core Engine:** Python 3.10+
 - **Frontend / UI:** Streamlit
-- **LLM Inferencing:** Ollama (requires local installation)
+- **LLM Inferencing:** Ollama - llama3.2 (requires local installation)
 - **Persistance:** Local SQLite
 - **Input Parsing:** `pdfplumber`, `youtube_transcript_api`
 - **Output Rendering:** `fpdf2`, `python-docx`
