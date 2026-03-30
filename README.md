@@ -2,9 +2,10 @@
 
 ## 1. Overview
 
-> **See `project_journey.md` for detailed explanation/understandinf of the project.**
+> **See `project_journey.md` for detailed explanation/understanding of the project.**
 
-The Lumina Assessment Engine is a local-first, privacy-respecting assessment generation pipeline. It solves the laborious process of manually building and grading pedagogically sound tests by dynamically transforming raw multi-modal user documents into highly structured JSON quizzes.
+The Lumina Assessment Engine is a local-first, privacy-respecting assessment generation pipeline. It removes the hard work of creating and checking assessment/tests by automatically turning different types of documents into structured quizzes and grading them.
+
 
 **High-Level Pipeline:**
 Input Documents → Parsing & Normalisation → Token-aware Chunking → LLM Prompt Injections → JSON Schema Validation → Interactive User Test → Evaluation via Rubrics → Grading Analytics → PDF/DOCX Report Exports.
